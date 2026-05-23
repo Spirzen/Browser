@@ -32,7 +32,7 @@ namespace Browser.Views
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "MainView";
+            this.Text = "Portfolio Browser";
             this.Size = new System.Drawing.Size(1024, 768);
         }
     }

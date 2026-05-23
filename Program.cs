@@ -1,15 +1,14 @@
-namespace Browser
+using Browser.Views;
+
+namespace Browser;
+
+static class Program
 {
-    internal static class Program
+    [STAThread]
+    static void Main()
     {
-        /// <summary>
-        ///  Основная точка входа в приложение
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Views.MainView());
-        }
+        ApplicationConfiguration.Initialize();
+        Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+        Application.Run(new MainView());
     }
 }
